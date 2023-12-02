@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=0.7" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anek+Bangla:wght@600&family=Barlow:wght@100&family=Open+Sans:wght@300&family=Poppins:wght@100;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- Optional Theme Stylesheet -->
+    <link
+      rel="stylesheet"
+      href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="flex-container">
+      <div class="navigation-bar">
+        <nav class="navbar navbar-expand-lg" style="margin-left: 200px">
+          <div class="container-fluid">
+            <div class="title-wrapper">
+              <a class="navbar-brand m-0" href="#"> Res </a>
+              <a href="#" style="align-self: center">
+                <img
+                  src="./assets/resq_transparent2.png"
+                  width="40px"
+                  alt="ResQ Logo"
+                />
+              </a>
+            </div>
+
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarScroll"
+              aria-controls="navbarScroll"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <i class="fa-solid fa-bars" style="color: white"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarScroll">
+              <ul class="navbar-nav m-auto my-2 my-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#pricing"
+                    >Pricing</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#product">Product</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#developers">Developers</a>
+                </li>
+              </ul>
+              <!--                         <form class="d-flex" role="search" style="width: 300px;">
+                          <input class="form-control me-2" type="search" placeholder="Write your E-mail" aria-label="Search">
+                          <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form> -->
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div class="first-part">
+        <div
+          style="
+            position: absolute;
+            width: 400px;
+            height: 250px;
+            top: 100px;
+            left: 0;
+            background-color: #202635;
+            z-index: 0;
+            border-radius: 50% 30% 70% 10%;
+          "
+        ></div>
+
+        <div class="main-content-grid">
+          <div class="title-1">
+            <h1 style="font-family: 'Anton', sans-serif; line-height: 1">
+              Manage your <br />
+              <span style="color: #f5c36a; font-family: 'Anton', sans-serif"
+                >restaurant</span
+              >
+              <br />
+              better.
+            </h1>
+          </div>
+          <div class="tablet-image-wrapper">
+            <div class="tablet-content">
+              <div class="image-content">
+                <img
+                  src="./assets/tablet_white.png"
+                  class="tablet-image"
+                  alt=""
+                />
+              </div>
+              <div class="tablet-shadow"></div>
+              <div class="mesh-container">
+                <div class="mesh" id="meshGrid"></div>
+              </div>
+              <div class="table2P">
+                <img src="./assets/Table2P.png" alt="" />
+              </div>
+              <div class="table4P">
+                <img src="./assets/FourPersonTable.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="title-2">
+            <span style="font-weight: bolder; color: #f5c36a">ResQ</span> keeps
+            your staff coordinated and tables turned with smooth reservations.
+            <br />
+            <span style="font-weight: bolder; color: #f5c36a">Reduce</span>
+            mistakes and maximize covers with ResQ's intelligent reservation
+            system.
+          </div>
+          <div class="button-3">
+            <button
+              type="button"
+              class="btn btn-primary px-4 get-started-button"
+            >
+              Get started
+            </button>
+            <button
+              type="button"
+              class="btn btn-outline-primary px-4 contact-button"
+              onclick="window.location='#contact'"
+            >
+              Contact
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="second-part" id="product">
+        <div class="second-part-card" style="flex-direction: row-reverse">
+          <!-- <hr style="position: absolute; width: 100%; z-index: 2;">
+          <div
+            style="
+            position: absolute;
+              color: #22d7ff;
+              font-weight: bolder;
+              font-size: 18px;
+              margin-left: 45px;
+              background-color: #b3b3b3;
+              width: 150px;
+              text-align: center;
+              z-index: 3;
+            "
+          >
+          
+            <p>FEATURES</p>
+          </div> -->
+          <div class="big-text">
+            Our <span>mission</span> is <br />
+            simple.
+          </div>
+          <!-- <hr> -->
+          <div class="feature-wrapper">
+            <div style="display: flex; flex-direction: column">
+              <hr class="hr" style="" />
+              <div class="small-section-title">
+                <p>HOW WE HELP</p>
+              </div>
+            </div>
+            <div
+              style="
+                position: absolute;
+                width: 500px;
+                height: 300px;
+                top: 300px;
+                border: 1px dashed #f5c26a41;
+                right: 100px;
+                background-color: transparent;
+                z-index: -2;
+                border-radius: 30% 30% 50% 70%;
+                transform: rotate(20deg);
+              "
+            ></div>
+            <div class="feature-cards">
+              <div class="feature-item">
+                <!-- CRVENI X PREKO ITEM CARD -->
+                <!--                 <div
+                  style="
+                    align-self: center;
+                    height: 10px;
+                    width: 100%;
+                    background-color: #ff00007a;
+                    position: absolute;
+                    transform: rotate(45deg);
+                    border-radius: 10px;
+                  "
+                ></div>
+                <div
+                  style="
+                    align-self: center;
+                    height: 10px;
+                    width: 100%;
+                    background-color: #ff00007a;
+                    position: absolute;
+                    transform: rotate(-45deg);
+                    border-radius: 10px;
+                  "
+                ></div> -->
+                <div class="feature-item-wrapper">
+                  <div class="card-title">
+                    <div class="card-title-icon">
+                      <i class="fa-solid fa-stopwatch-20"></i>
+                    </div>
+                    <div class="card-title-text">
+                      <h4><!-- Save Time --></h4>
+                    </div>
+                  </div>
+                  <div class="card-content">
+                    <h4>Save time</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="feature-item">
+                <div class="feature-item-wrapper">
+                  <div class="card-title">
+                    <div class="card-title-icon">
+                      <img src="./assets/table-ready.svg" width="50px" alt="" />
+                    </div>
+                    <div class="card-title-text"><h4></h4></div>
+                  </div>
+                  <div class="card-content">
+                    <h4>Easy reserve</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="feature-item">
+                <div class="feature-item-wrapper">
+                  <div class="card-title">
+                    <div class="card-title-icon">
+                      <img
+                        src="./assets/time-table-icon.svg"
+                        width="50px"
+                        alt=""
+                      />
+                    </div>
+                    <div class="card-title-text"><h4></h4></div>
+                  </div>
+                  <div class="card-content">
+                    <h4>Improve Organization</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="feature-item">
+                <div class="feature-item-wrapper">
+                  <div class="card-title">
+                    <div class="card-title-icon">
+                      <img
+                        src="./assets/happy-face-icon.svg"
+                        width="50px"
+                        alt=""
+                      />
+                    </div>
+                    <div class="card-title-text"><h4></h4></div>
+                  </div>
+                  <div class="card-content">
+                    <h4>Delight Guests</h4>
+                  </div>
+                </div>
+              </div>
+              <!--               <div class="feature-item">
+                <div class="card-title">
+                  <div class="card-title-icon"></div>
+                  <div class="card-title-text"><h4></h4></div>
+                </div>
+                <div class="card-content"></div>
+                F
+              </div>
+              <div class="feature-item">6</div>
+              <div class="feature-item">7</div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="third-part">
+        <div class="third-part-card">
+          <div class="big-text" style="position: relative">
+            <!--   <div>
+              <div style="position: absolute;width: 100%; height: 100%; background-color: red; z-index: -1023;">
+                </div> 
+                <img
+                  style="position: absolute; z-index: 0; opacity: 0.1;"
+                  src="https://picsum.photos/500/500"
+                  alt=""
+                />
+            </div>-->
+
+            It's to<br />
+            save <br />
+            your <br />
+            <span>time.</span>
+            <div
+              style="
+                position: absolute;
+                width: 400px;
+                height: 250px;
+                top: 0px;
+                right: 0;
+                background-color: #202635;
+                z-index: -2;
+                border-radius: 20% 60% 40% 70%;
+              "
+            ></div>
+          </div>
+          <div
+            class="feature-wrapper"
+            style="padding-bottom: 10px; padding-top: 55px"
+          >
+            <div style="display: flex; flex-direction: column">
+              <hr class="hr" style="" />
+              <div class="small-section-title">
+                <p style="background-color: #181c26">FEATURES</p>
+              </div>
+            </div>
+            <div class="feature">
+              <div
+                style="
+                  cursor: default;
+                  min-width: 460px;
+                  padding: 10px 20px;
+                  background-color: #202635;
+                  border-radius: 10px;
+                "
+              >
+                <div class="feature-title">
+                  <img
+                    src="./assets/dashboard-laptop-icon.svg"
+                    width="50px"
+                    alt=""
+                  />
+                  <h3>Real-Time Dashboard</h3>
+                </div>
+                <div class="feature-content">
+                  See tables that are reserved, available, and occupied at a
+                  glance on the visually intuitive dashboard updated in
+                  real-time.
+                </div>
+              </div>
+            </div>
+            <div class="feature">
+              <div
+                style="
+                  cursor: default;
+                  min-width: 460px;
+                  padding: 10px 20px;
+                  background-color: #202635;
+                  border-radius: 10px;
+                "
+              >
+                <div class="feature-title">
+                  <img src="./assets/floor-plan-icon.svg" width="40px" alt="" />
+                  <h3>Custom Floor Plans</h3>
+                </div>
+                <div class="feature-content">
+                  Match the digital layout precisely to your restaurant's table
+                  arrangements for clarity by uploading images or using simple
+                  drag and drop tools.
+                </div>
+              </div>
+            </div>
+            <div class="feature">
+              <div
+                style="
+                  cursor: default;
+                  min-width: 460px;
+                  padding: 10px 20px;
+                  background-color: #202635;
+                  border-radius: 10px;
+                "
+              >
+                <div class="feature-title">
+                  <img src="./assets/wait-list-icon.svg" width="50px" alt="" />
+                  <h3>Waitlist & Queue Management</h3>
+                </div>
+                <div class="feature-content">
+                  When the restaurant is full, easily move guests to a digital
+                  waitlist then receive alerts when their table is ready for
+                  waiting in comfort, not in crowds.
+                </div>
+              </div>
+            </div>
+            <div class="feature">
+              <div class="feature-title">
+                <h3></h3>
+              </div>
+              <div class="feature-content">
+                <button type="button" class="btn btn-primary px-4 read-more">
+                  Read more
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="second-part">
+        <div class="second-part-card" style="flex-direction: row-reverse">
+          <div class="big-text">
+            It's to<br />
+            save <br />
+            your <br />
+            <span>nerves.</span>
+            <div
+              style="
+                position: absolute;
+                width: 400px;
+                height: 250px;
+                top: 100px;
+                left: 0;
+                background-color: #46537517;
+                z-index: -22;
+                border-radius: 50% 30% 50% 60%;
+                transform: rotate(-20deg);
+              "
+            ></div>
+          </div>
+          <!-- <hr> -->
+          <div class="feature-wrapper" style="padding-bottom: 45px">
+            <div
+              style="
+                position: absolute;
+                width: 400px;
+                height: 250px;
+                top: 500px;
+                right: 0;
+                background-color: #181c266e;
+                z-index: -22;
+                border-radius: 50%;
+              "
+            ></div>
+            <div style="display: flex; flex-direction: column">
+              <hr class="hr" style="" />
+              <div class="small-section-title">
+                <p>VISION</p>
+              </div>
+            </div>
+
+            <div class="vision-cards">
+              <div class="vision-item" style="max-width: 460px">
+                <div class="vision-item-wrapper">
+                  <div class="card-title">
+                    <div class="card-title-icon"></div>
+                    <div class="card-title-text">
+                      <h4 style="color: #f5c36a">
+                        Revolutionizing Reservations
+                      </h4>
+                    </div>
+                  </div>
+                  <div class="card-content">
+                    Imagine a world where securing a table is seamless,
+                    delightful, and tailored to your preferences. We envision a
+                    dining landscape where every reservation is an experience in
+                    itself.
+                  </div>
+                </div>
+              </div>
+              <div class="vision-item" style="max-width: 460px">
+                <div class="vision-item-wrapper">
+                  <div class="card-title">
+                    <div class="card-title-icon"></div>
+                    <div class="card-title-text">
+                      <h4 style="color: #f5c36a">Exceptional Service</h4>
+                    </div>
+                  </div>
+                  <div class="card-content">
+                    Our commitment is to redefine the standard of service. We're
+                    not just building a reservation app; we're crafting a
+                    platform that anticipates your needs, enhances your dining
+                    journey, and ensures every moment is memorable
+                  </div>
+                </div>
+              </div>
+              <div class="vision-item" style="max-width: 460px">
+                <div class="vision-item-wrapper">
+                  <div class="card-title">
+                    <div class="card-title-icon"></div>
+                    <div class="card-title-text">
+                      <h4 style="color: #f5c36a">Innovation Unleashed</h4>
+                    </div>
+                  </div>
+                  <div class="card-content">
+                    At ResQ, we're not just keeping up with trends; we're
+                    setting them. Expect innovation, flexibility, and features
+                    that go beyond the ordinary. We're here to shape the future
+                    of restaurant reservations, and we want you to be a part of
+                    it
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="third-part" id="pricing">
+        <div class="third-part-card">
+          <div class="big-text" style="position: relative">
+            It's to<br />
+            save <br />
+            your <br />
+            <span>money.</span>
+            <div
+              style="
+                position: absolute;
+                width: 400px;
+                height: 250px;
+                top: 200px;
+                left: 0;
+                background-color: #202635;
+                z-index: -22;
+                border-radius: 50%;
+              "
+            ></div>
+          </div>
+          <div class="feature-wrapper">
+            <div style="display: flex; flex-direction: column">
+              <hr class="hr" style="" />
+              <div class="small-section-title">
+                <p style="background-color: #181c26">PRICING</p>
+              </div>
+            </div>
+            <!--             <div class="pricing">
+              <div class="pricing-wrapper">
+                <div class="pricing-item">
+    
+                </div>
+                <div class="pricing-item">
+                  
+                </div>
+                <div class="pricing-item">
+                  
+                </div>
+              </div>
+            </div> -->
+
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide pricing-item">
+                  <div class="pricing-bubble" style=""></div>
+
+                  <div class="not-available">
+                    <div
+                      style="
+                        width: 100%;
+                        height: 100%;
+                        top: 0;
+                        left: 0;
+                        position: absolute;
+                        z-index: 1;
+                        background-color: transparent;
+                        backdrop-filter: blur(10px);
+                        text-align: center;
+                      "
+                    ></div>
+                    <div
+                      style="
+                        position: absolute;
+                        z-index: 2;
+                        width: 100%;
+                        height: 100%;
+                        top: 50%;
+                      "
+                    >
+                      <h2 style="text-align: center">not available</h2>
+                    </div>
+                  </div>
+                  <div class="pricing-title">
+                    <div><h3>Basic</h3></div>
+                    <div><h2>59€</h2></div>
+                  </div>
+                  <div class="pricing-content">
+                    <div>some content</div>
+                    <div>some content</div>
+                  </div>
+                </div>
+                <div class="swiper-slide pricing-item">
+                  <div class="pricing-bubble" style=""></div>
+                  <div class="pricing-title">
+                    <div><h3>Standard</h3></div>
+                    <div>
+                      <h1 style="display: flex; flex-direction: row">
+                        <span style="font-size: 25px; margin-right: 8px">€</span
+                        >79<span style="font-size: 20px; align-self: flex-end"
+                          >/ mo</span
+                        >
+                      </h1>
+                    </div>
+                  </div>
+                  <div class="pricing-content" style="font-size: 18px">
+                    <div>
+                      <i
+                        style="color: #f5c36a"
+                        class="fa-solid fa-check mx-2"
+                      ></i
+                      >Customize floorplan
+                    </div>
+                    <div>
+                      <i
+                        style="color: #f5c36a"
+                        class="fa-solid fa-check mx-2"
+                      ></i
+                      >Manage reservations
+                    </div>
+                    <div>
+                      <i
+                        style="color: #f5c36a"
+                        class="fa-solid fa-check mx-2"
+                      ></i
+                      >Save customers
+                    </div>
+                  </div>
+                  <div class="pricing-button">
+                    <button>Try it!</button>
+                  </div>
+                </div>
+                <div class="swiper-slide pricing-item">
+                  <div class="pricing-bubble" style=""></div>
+                  <div class="not-available">
+                    <div
+                      style="
+                        width: 100%;
+                        height: 100%;
+                        top: 0;
+                        left: 0;
+                        position: absolute;
+                        z-index: 1;
+                        background-color: transparent;
+                        backdrop-filter: blur(10px);
+                        text-align: center;
+                      "
+                    ></div>
+                    <div
+                      style="
+                        position: absolute;
+                        z-index: 2;
+                        width: 100%;
+                        height: 100%;
+                        top: 50%;
+                      "
+                    >
+                      <h2 style="text-align: center">not available</h2>
+                    </div>
+                  </div>
+                  <div class="pricing-title">
+                    <div><h3>Pro</h3></div>
+                    <div><h2>149€</h2></div>
+                  </div>
+                  <div class="pricing-content">
+                    <div>some content</div>
+                    <div>some content</div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="swiper-button-next"
+                style="margin-right: -180px"
+              ></div>
+              <div class="swiper-button-prev" style="margin-left: -180px"></div>
+              <div class="swiper-pagination" style="margin-bottom: -40px"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-section" id="contact">
+        <div class="contact-left">
+          <div style="display: flex; flex-direction: column">
+            <hr class="hr" style="" />
+            <div class="small-section-title">
+              <p>CONTACT US</p>
+            </div>
+          </div>
+          <div class="form-card">
+            <div id="error-msg">Please fill required fields</div>
+            <form oninput="formChange(event)">
+              <input type="name" placeholder="Full name" />
+              <input type="email" placeholder="E-mail" />
+              <textarea
+                name="message"
+                id=""
+                cols="30"
+                rows="4"
+                placeholder="Write Something..."
+              ></textarea>
+              <button
+                onclick="checkFormFilled(event)"
+                class="submitFormBtn btn button"
+                type="submit"
+                disabled
+              >
+                Send
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="contact-right">
+          <div class="big-text">
+            It's to<br />
+            make <br />
+            you <br />
+            <span>prestige.</span>
+            <div
+              style="
+                position: absolute;
+                width: 400px;
+                height: 250px;
+                top: 100px;
+                left: 0;
+                background-color: #46537517;
+                z-index: -22;
+                border-radius: 50% 30% 50% 60%;
+                transform: rotate(-20deg);
+              "
+            ></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="third-part" id="developers" style="padding-bottom: 100px;">
+        <div class="third-part-card">
+          <div class="big-text" style="position: relative">
+            It's to<br />
+            save <br />
+            your <br />
+            <span>money.</span>
+            <div
+              style="
+                position: absolute;
+                width: 400px;
+                height: 250px;
+                top: 200px;
+                left: 0;
+                background-color: #202635;
+                z-index: -22;
+                border-radius: 50%;
+              "
+            ></div>
+          </div>
+          <div class="feature-wrapper">
+            <div style="display: flex; flex-direction: column">
+              <hr class="hr" style="" />
+              <div class="small-section-title">
+                <p style="background-color: #181c26">MEET US</p>
+              </div>
+              <div class="developer-wrapper">
+                <div class="developer">
+                  <div class="dev-img">
+                    <img src="./assets/deni_image.jpg" alt="" width="200px" />
+                  </div>
+                  <div class="dev-name"><h3>DENI</h3></div>
+                  <div class="dev-social-media">
+                    <a href="#  "><i href="#" class="fa-brands fa-square-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                  </div>
+                  <div class="dev-description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Eos quae optio, sint blanditiis iusto minima consequatur,
+                    ipsum sed nisi facilis quaerat facere deserunt assumenda,
+                    voluptas fugit? Est cum nam aut!
+                  </div>
+                </div>
+                <div class="developer">
+                  <div class="dev-img">
+                    <img src="./assets/adnan_image.jpg" alt="" width="200px" />
+                  </div>
+                  <div class="dev-name"><h3>ADNAN</h3></div>
+                  <div class="dev-social-media">
+                    <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                  </div>
+                  <div class="dev-description">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Excepturi eaque impedit quos, neque ea ad ducimus
+                    praesentium quibusdam facere deleniti, cupiditate sed
+                    accusantium debitis vitae rerum culpa. Maiores, temporibus
+                    assumenda!
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="footer-wrapper">
+          <div class="footer-1">
+            <div class="title-wrapper">
+              <a class="navbar-brand m-0" href="#"> Res </a>
+              <a href="#" style="align-self: center">
+                <img
+                  src="./assets/resq_transparent2.png"
+                  width="40px"
+                  alt="ResQ Logo"
+                />
+              </a>
+            </div>
+            <div class="footer-social-media">
+              <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+            </div>
+          </div>
+          <div class="footer-2">We take care of reservations at your restaurant, we are the fastest and most elegant. Delight your guests, contact us now!</div>
+          <div class="footer-3">
+            <button
+              type="button"
+              class="btn btn-outline-primary px-4 contact-button"
+              onclick="window.location='#contact'"
+            >
+              Contact
+            </button>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        effect: "cards",
+        cardsEffect: {
+          perSlideOffset: 60, // Space between cards in px
+          perSlideRotate: 2, // Rotation of cards in degrees
+        },
+        initialSlide: 1,
+        grabCursor: true,
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        /*         noSwiping: true,
+noSwipingClass: 'swiper-slide', */
+      });
+
+      const meshContainer = document.getElementById("meshGrid");
+
+      // Generate the grid dynamically
+      for (let i = 0; i < 36 * 26; i++) {
+        const cell = document.createElement("div");
+        meshContainer.appendChild(cell);
+      }
+
+      function buttonClicked() {
+        console.log("clicekd");
+        let a = document.querySelector("#example1");
+        let b = document.querySelectorAll("#animate-image-wrapper");
+        a.classList.toggle("rotation-button");
+        console.log(b[1]);
+        b[0].classList.toggle("translation-button");
+        b[1].classList.toggle("translation-button");
+      }
+
+      function formChange(event) {
+        const nameInput = event.target.form[0];
+        const emailInput = event.target.form[1];
+        const submitBtn = document.getElementsByClassName("submitFormBtn")[0];
+
+        if (
+          emailInput.value !== "" &&
+          isValidEmail(emailInput.value) &&
+          nameInput.value !== ""
+        ) {
+          submitBtn.disabled = false;
+        } else {
+          submitBtn.disabled = true;
+        }
+      }
+
+      function checkFormFilled(event) {
+        event.preventDefault(); // Prevent the default form submission
+
+        // Your existing code for displaying error messages
+
+        // Handle the form submission using AJAX (fetch)
+        fetch("form-process.php", {
+          method: "POST",
+          body: new FormData(event.target.form),
+        })
+          .then((response) => response.json())
+          .then((data) => {
+            if (data.status === "success") {
+              // Display a success message on the frontend
+              console.log(data.message);
+              // Optionally, you can redirect the user or display a success message on the page
+            } else {
+              // Display an error message on the frontend
+              console.error(data.message);
+            }
+          })
+          .catch((error) => console.error("Error:", error));
+      }
+
+      function sendEmail(event) {
+        if (isValidEmail(event.target.form[1].value)) {
+        } else {
+          console.log("NIJE TOCAN EMAIL");
+        }
+      }
+
+      function isValidEmail(email) {
+        // Regular expression for a valid email address
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+        // Test the email against the regex
+        return emailRegex.test(email);
+      }
+
+    </script>
+  </body>
+</html>
